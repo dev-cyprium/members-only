@@ -1,4 +1,5 @@
 # Members only
+You can see this application live online at heroku [here](https://members-only-dest.herokuapp.com/) (Note: I don't have premium plan so I do not guarante that the application will work)
 
 ## About
 This is the assignment from the [Odin project](http://www.theodinproject.com/ruby-on-rails/authentication). The application is about authentication and authorization. The web site is a
