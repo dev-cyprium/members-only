@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
 
   #TODO: Sessions and cookies not working, continue from part 9 from the assigment
 
+  helper_method :logged_in?
+  helper_method :get_title
+  helper_method :current_user
+
   def sign_in(user)
   	session[:user_id] = user.id
   	token = User.generate_token
@@ -25,6 +29,18 @@ class ApplicationController < ActionController::Base
   def logout(user)
     session[:user_id] = nil
     cookies[:remember_token] = nil
+  end
+
+  def logged_in?
+    session[:user_id]
+  end
+
+  def get_title(post)
+    if logged_in?
+      "#{post.user.name} said: "
+    else
+      "User said: "
+    end
   end
 
   private

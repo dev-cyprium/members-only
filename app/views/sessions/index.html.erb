@@ -1,6 +1,6 @@
 <h1>Welcome to Club house!</h1>
 <div id="links">
-<%= link_to "Preview posts", '#' %>
+<%= link_to "Preview posts", posts_path %>
 <% if logged_in? %>
 	<%= link_to "Log out", logout_path, method: :delete %>
 <% else %>

@@ -1,0 +1,13 @@
+<h1>Posts list</h1>
+<% if logged_in? %>
+	<%= link_to "Create a new post", new_post_path %>
+<% end %>
+<ul>
+<% @posts.each do |post| %>
+	<li>
+	<div class="post"><h2><%= get_title(post) %></h2><%= post.content %></div></li>
+<% end %>
+</ul>
+<div id="links">
+<%= link_to "Back to index", root_path %>
+</div>
