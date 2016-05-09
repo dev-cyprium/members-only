@@ -1,5 +1,7 @@
 # Members only
-You can see this application live online at heroku [here](https://members-only-dest.herokuapp.com/) (Note: I don't have premium plan so I do not guarante that the application will work)
+You can see this application live online at heroku [here](https://members-only-dest.herokuapp.com/) (Note: I don't have premium plan so I do not guarante that the application will work). 
+
+Alternatively you can download the application and run it localy with `$rails server` command. I've made it on Ubuntu/Linux, but it shouldn't have any problems running on any enviroments with ruby and rails.
 
 ## About
 This is the assignment from the [Odin project](http://www.theodinproject.com/ruby-on-rails/authentication). The application is about authentication and authorization. The web site is a
