@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
 	validates :password_confirmation, presence: true
 	before_create :add_token
 
+	has_many :posts
 	has_secure_password
 
 
